@@ -11,7 +11,7 @@ CPU cpu_init(void) {
         .memory = { 0 }
     };
 
-    // Ensure we halt befor we run out of memory...
+    // Ensure we halt before we run out of memory...
     cpu.memory[MEMORY_WORDS - 1] = INST_HLT;
 
     return cpu;
